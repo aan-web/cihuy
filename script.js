@@ -1,3 +1,10 @@
+document.addEventListener('click', function startMusic() {
+  const music = document.getElementById('bgm');
+  if (music && music.paused) {
+    music.play();
+  }
+  document.removeEventListener('click', startMusic);
+});
 
 /* =========================
    Config: messages & counts
